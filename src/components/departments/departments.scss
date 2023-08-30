@@ -13,12 +13,11 @@
       padding-top: 32px;
     }
     li {
-      border-right: 1px solid rgba(#d70000, 0.1);
       padding-bottom: 32px;
       padding-top: 32px;
       max-width: 158px;
       width: 100%;
-      transition: all 0.3s;
+      background-color: var(--color-light);
       &:hover {
         background-color: var(--color-blood);
         color: var(--color-light);
@@ -50,6 +49,7 @@
       padding: 0 12px;
       display: block;
       text-decoration-color: transparent;
+      border-right: 1px solid rgba(#d70000, 0.1);
       @include media-breakpoint-down(xl) {
         border: 1px solid rgba(#d70000, 0.1);
         height: 100%;

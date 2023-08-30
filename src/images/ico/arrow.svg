@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ico 32 / arrow</title>
+    <g id="ico-32-/-arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="right.8" transform="translate(1, 4)" fill="#fff" fill-rule="nonzero">
+            <path d="M17.5,24.95 C17.4,24.95 17.2,24.95 17.1,24.85 C16.9,24.65 16.9,24.35 17.1,24.15 L28.8,12.45 L17.1,0.85 C16.9,0.65 16.9,0.35 17.1,0.15 C17.3,-0.05 17.6,-0.05 17.8,0.15 L29.8,12.15 C30,12.35 30,12.65 29.8,12.85 L17.8,24.85 C17.8,24.95 17.6,24.95 17.5,24.95 Z" id="Path"></path>
+            <path d="M29.5,12.95 L0.5,12.95 C0.2,12.95 0,12.75 0,12.45 C0,12.15 0.2,11.95 0.5,11.95 L29.5,11.95 C29.8,11.95 30,12.15 30,12.45 C30,12.75 29.8,12.95 29.5,12.95 Z" id="Path"></path>
+        </g>
+    </g>
+</svg>

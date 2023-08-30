@@ -1,0 +1,59 @@
+.departments {
+  position: relative;
+
+  margin-bottom: 26px;
+  &-list {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    justify-content: center;
+    background: var(--color-light);
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 12px 34px rgba(0, 0, 0, 0.06),
+      0px 1px 7px rgba(0, 0, 0, 0.05);
+    @include media-breakpoint-down(xl) {
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+    li {
+      border-right: 1px solid rgba(#d70000, 0.1);
+
+      max-width: 158px;
+      width: 100%;
+      margin-bottom: 16px;
+      &:last-child {
+        border: none;
+        @include media-breakpoint-down(xl) {
+          margin-bottom: 0;
+        }
+      }
+      @include media-breakpoint-down(xl) {
+        padding-left: 8px;
+        padding-right: 8px;
+        border-right: 0;
+      }
+    }
+    &__item {
+      text-align: center;
+      padding: 0 12px;
+      display: block;
+      text-decoration-color: transparent;
+      transition: all 0.3s;
+      @include media-breakpoint-down(xl) {
+        border: 1px solid rgba(#d70000, 0.1);
+        height: 100%;
+        padding-top: 20px;
+        padding-bottom: 16px;
+      }
+      &:hover {
+        text-decoration-color: inherit;
+        font-weight: 600;
+      }
+    }
+    &__icon {
+      margin: 0 auto 12px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+}

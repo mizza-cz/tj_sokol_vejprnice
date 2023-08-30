@@ -1,0 +1,8 @@
+.post {
+  box-shadow: 0px 12px 34px rgba(0, 0, 0, 0.06), 0px 1px 7px rgba(0, 0, 0, 0.05);
+  background-color: var(--color-light);
+  padding: 40px;
+  .link {
+    width: fit-content;
+  }
+}

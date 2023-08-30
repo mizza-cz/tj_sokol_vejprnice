@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="15px" viewBox="0 0 14 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="🚂-Playground" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Desktop" transform="translate(-1413, -2808)" stroke="#D70000" stroke-width="1.55999999">
+            <g id="Group-21" transform="translate(0, 2405)">
+                <g id="Group" transform="translate(1413.8078, 404.6293)">
+                    <g id="arrow-right" transform="translate(5.8302, 6.2466) scale(1, -1) rotate(90) translate(-5.8302, -6.2466)translate(-0.4164, 0.4164)">
+                        <line x1="0" y1="5.83016986" x2="12.4932211" y2="5.83016986" id="Path"></line>
+                        <polyline id="Path" points="6.66305127 11.6603397 12.4932211 5.83016986 6.66305127 4.21789437e-14"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,17 @@
+.link {
+  display: block;
+  color: var(--color-light);
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 20px;
+  padding: 10px 22px;
+  text-decoration: none;
+}
+
+.link--red {
+  background: var(--color-red);
+}
+.link--dark {
+  background: var(--color-dark);
+}

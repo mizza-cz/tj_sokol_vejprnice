@@ -1,0 +1,36 @@
+.o-content {
+  &::after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+  > :first-child {
+    margin-top: 0;
+  }
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+p {
+}
+.p2 {
+  font-size: 14px;
+}
+
+.h1,
+.o-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 64px;
+}
+.h2,
+.o-content h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+.h3,
+.o-content h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}

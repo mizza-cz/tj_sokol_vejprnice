@@ -3,8 +3,6 @@
 
   margin-bottom: 26px;
   &-list {
-    padding-top: 32px;
-    padding-bottom: 32px;
     justify-content: center;
     background: var(--color-light);
     display: flex;
@@ -12,15 +10,28 @@
     box-shadow: 0px 12px 34px rgba(0, 0, 0, 0.06),
       0px 1px 7px rgba(0, 0, 0, 0.05);
     @include media-breakpoint-down(xl) {
-      padding-top: 24px;
-      padding-bottom: 24px;
+      padding-top: 32px;
     }
     li {
       border-right: 1px solid rgba(#d70000, 0.1);
-
+      padding-bottom: 32px;
+      padding-top: 32px;
       max-width: 158px;
       width: 100%;
-      margin-bottom: 16px;
+      transition: all 0.3s;
+      &:hover {
+        background-color: var(--color-blood);
+        color: var(--color-light);
+        transform: scale(1.05);
+        svg g,
+        svg path {
+          fill: var(--color-light);
+        }
+        @include media-breakpoint-down(xl) {
+          background-color: transparent;
+          transform: scale(1);
+        }
+      }
       &:last-child {
         border: none;
         @include media-breakpoint-down(xl) {
@@ -31,6 +42,7 @@
         padding-left: 8px;
         padding-right: 8px;
         border-right: 0;
+        padding-top: 0;
       }
     }
     &__item {
@@ -38,16 +50,15 @@
       padding: 0 12px;
       display: block;
       text-decoration-color: transparent;
-      transition: all 0.3s;
       @include media-breakpoint-down(xl) {
         border: 1px solid rgba(#d70000, 0.1);
         height: 100%;
         padding-top: 20px;
         padding-bottom: 16px;
+        min-height: 122px;
       }
       &:hover {
-        text-decoration-color: inherit;
-        font-weight: 600;
+        background-color: var(--color-blood);
       }
     }
     &__icon {

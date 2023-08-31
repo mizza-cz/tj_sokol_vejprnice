@@ -1,7 +1,10 @@
 .departments {
   position: relative;
 
-  margin-bottom: 26px;
+  margin-bottom: 64px;
+  @include media-breakpoint-down(lg){
+   margin-bottom: 40px;
+  }
   &-list {
     justify-content: center;
     background: var(--color-light);

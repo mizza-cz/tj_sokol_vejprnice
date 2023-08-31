@@ -1,0 +1,43 @@
+.aside {
+  &-menu {
+    li {
+      padding-top: 16px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #d1d1d1;
+    }
+    a {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 20px;
+      position: relative;
+      padding-left: 57px;
+      display: block;
+      text-decoration: none;
+      transition: all 0.3s;
+      &:hover {
+        color: var(--color-red);
+        &::before {
+          background-image: url("../images/ico/arrow-right-red.svg");
+        }
+      }
+      &::before {
+        transition: all 0.3s;
+        content: "";
+        position: absolute;
+        left: 18px;
+        width: 11px;
+        height: 12px;
+        top: 4px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("../images/ico/arrow-right.svg");
+      }
+    }
+    .active {
+      color: var(--color-red);
+      &::before {
+        background-image: url("../images/ico/arrow-right-red.svg");
+      }
+    }
+  }
+}

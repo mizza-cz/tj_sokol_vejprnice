@@ -8,10 +8,11 @@
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
     <meta name="format-detection" content="telephone=no" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Lexend:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="preload" href="css/styles.css" as="style" />
@@ -33,9 +34,8 @@
   </head>
   <body>
     <div class="base">
-     
-      {% block main %}{% endblock %}
-      {% include "@components/footer/footer.twig" %}
+      {% block main %}{% endblock %} {% include "@components/footer/footer.twig"
+      %}
     </div>
     <script
       defer

@@ -1,0 +1,13 @@
+{% extends "@components/base/base.twig" %} {% set title = "05.0_club" %} {%
+block main %}
+<div class="main-bg">
+  {% include "@components/header/header-club.twig" %}
+  <main class="main" aria-label="Hlavní obsah">
+    {% include "@components/juniors-posts/juniors-posts.twig" %} {% include
+    "@components/juniors-matches/juniors-matches.twig" %} {% include
+    "@components/juniors-partners/juniors-partners.twig" %} {% include
+    "@components/departments/departments.twig" %}
+  </main>
+</div>
+
+{% endblock %}

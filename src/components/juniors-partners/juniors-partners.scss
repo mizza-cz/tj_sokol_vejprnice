@@ -1,0 +1,31 @@
+.juniors-partners {
+  .slick-track {
+    display: flex;
+    align-items: center;
+  }
+  .slick-slide img {
+    max-height: 90px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .slick-arrow {
+    display: none;
+  }
+  &__item {
+    img {
+      max-height: 120px;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  }
+}
+.juniors-partners__inner {
+  border: 1px solid rgba(231, 231, 231, 1);
+  box-shadow: 0px 12px 34px rgba(0, 0, 0, 0.06), 0px 1px 7px rgba(0, 0, 0, 0.05);
+  background-color: rgba(255, 255, 255, 1);
+  padding-top: 32px;
+  padding-bottom: 48px;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 64px;
+}

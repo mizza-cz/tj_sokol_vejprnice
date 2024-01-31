@@ -1,0 +1,15 @@
+.article-section .juniors-posts__main h1 {
+   text-decoration: none;
+ }
+ .article-section .juniors-posts {
+   margin-bottom: 40px;
+ }
+ .article-section .juniors-posts__main {
+   margin-bottom: 0;
+ }
+ .article-section {
+   padding-bottom: 120px;
+   @include media-breakpoint-down(lg) {
+     padding-bottom: 60px;
+   }
+ }

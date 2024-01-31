@@ -1,0 +1,6 @@
+.gallery-section {
+  padding-top: 40px;
+  @include media-breakpoint-down(lg) {
+    padding-top: 0;
+  }
+}

@@ -1,19 +1,31 @@
 .header {
   position: relative;
   z-index: 99;
+
   .link {
     @include media-breakpoint-down(xl) {
       margin-left: auto;
+    }
+    @media (max-width: 440px) {
+      order: 2;
+      width: 100%;
+      max-width: 200px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 24px;
     }
   }
   &__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 60px;
+    padding-top: 48px;
     padding-bottom: 50px;
     @include media-breakpoint-down(xl) {
       padding-top: 24px;
+    }
+    @include media-breakpoint-down(sm) {
+      flex-wrap: wrap;
     }
   }
   &__logo {
@@ -40,15 +52,18 @@
     transition: opacity 0.3s, visibility 0.3s;
     flex-wrap: wrap;
     padding-bottom: 20px;
-    padding-top: 24px;
+    padding-top: 20px;
     max-width: 320px;
     min-width: 240px;
   }
 }
 .nav-item {
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 16px;
   margin: 0;
+  position: relative;
+  @include media-breakpoint-down(xl) {
+    padding: 0;
+  }
 }
 .nav-link {
   font-size: 16px;
@@ -70,6 +85,7 @@
     text-align: right;
     padding-bottom: 6px;
     padding-top: 6px;
+    padding-right: 16px;
   }
 }
 .is-nav-open .header .navbar-expand-lg .navbar-collapse {
@@ -164,6 +180,11 @@
     @include media-breakpoint-down(xl) {
       margin-left: auto;
     }
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      order: 2;
+      margin-top: 24px;
+    }
   }
   &__logo {
     display: flex;
@@ -172,7 +193,7 @@
     margin-left: 20px;
     border-left: 1px solid #e3e3e3;
     @include media-breakpoint-down(md) {
-      display: none;
+      // display: none;
     }
     svg,
     g {
@@ -214,5 +235,171 @@
       display: block;
       object-fit: contain;
     }
+  }
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  z-index: 99;
+  background-color: var(--color-light);
+  top: 98%;
+  left: -20px;
+  z-index: 20;
+  float: left;
+  min-width: 320px;
+  padding: 0.5rem 0;
+  margin: 0 0;
+  font-size: 1rem;
+  color: white;
+  text-align: left;
+  list-style: none;
+  overflow: hidden;
+  display: none;
+  overflow: hidden;
+  visibility: hidden;
+
+  border-radius: 12px;
+  border: 1px solid #e3e3e3;
+  box-shadow: 0px 12px 16px -4px #10182814;
+  @include media-breakpoint-down(xl) {
+    text-align: center;
+    position: static;
+    transform: none;
+    flex-direction: column;
+    box-shadow: none;
+    transform: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    text-align: right;
+    left: 0 !important;
+    background-color: var(--color-red);
+    padding-right: 0;
+    border-radius: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    justify-content: flex-end;
+    li {
+      margin-bottom: 8px;
+      @include media-breakpoint-down(xl) {
+        text-align: right;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+  }
+  &.show {
+    display: flex;
+    flex-direction: column;
+    visibility: visible;
+    overflow: visible;
+  }
+  li:last-child .dropdown-item {
+    border: none;
+  }
+}
+.nav-item.dropdown:hover {
+  .dropdown-menu {
+    display: flex;
+    visibility: visible;
+    overflow: visible;
+    flex-direction: column;
+  }
+}
+.dropdown-item {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: var(--color-red);
+  display: flex;
+
+  position: relative;
+  padding: 8px 24px;
+  clear: both;
+  white-space: nowrap;
+  background-color: transparent;
+  text-decoration: none;
+
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  @include media-breakpoint-down(xl) {
+    display: block;
+    transform: none;
+    width: 100%;
+    left: 0;
+    text-align: right;
+    padding-left: 0;
+    padding-right: 16px;
+    font-size: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: var(--color-light) !important;
+    &:hover,
+    &:focus {
+      background-color: var(--color-red);
+      color: var(--color-blood);
+    }
+  }
+  &:hover,
+  &:focus {
+    color: var(--color-blood);
+  }
+}
+.collapse:not(.show) {
+  display: flex;
+}
+.nav-item:hover > .dropdown-menu {
+  display: flex !important;
+}
+.dropdown-menu.show.dropdown-submenu {
+  position: relative;
+  padding: 0;
+  // padding-top: 12px;
+  box-shadow: none;
+  display: flex !important;
+  flex-direction: column;
+  @include media-breakpoint-down(xl) {
+    padding-top: 12px;
+  }
+  .dropdown-item {
+    padding-bottom: 4px;
+    padding-top: 4px;
+    color: var(--color-dark);
+  }
+}
+.dropdown-submenu.dropdown-menu {
+  @include media-breakpoint-down(xl) {
+    display: none !important;
+  }
+}
+.dropdown-item.dropdown-toggle.show {
+  @include media-breakpoint-down(xl) {
+    .dropdown-submenu.dropdown-menu {
+      display: flex !important;
+      padding-top: 12px !important;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  div#es-strip-container {
+    display: none;
+  }
+}
+.dropdown-menu {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+.dropdown-menu.show {
+  @include media-breakpoint-down(xl) {
+    transform: none !important;
+    width: 100% !important;
+    text-align: right !important;
+    min-width: auto !important;
+    top: 0 !important;
+    position: relative !important;
+    min-width: 320px !important;
   }
 }

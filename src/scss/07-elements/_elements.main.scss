@@ -3,35 +3,35 @@
 }
 .main-bg {
   position: relative;
-  &::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-repeat: repeat;
-    background-image: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 0) 100%
-    );
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 0;
-  }
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-image: url("../images/content/bg.png");
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-  }
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 100%;
+  //   background-repeat: repeat;
+  //   background-image: linear-gradient(
+  //     180deg,
+  //     rgba(255, 255, 255, 1) 0%,
+  //     rgba(255, 255, 255, 0) 100%
+  //   );
+  //   left: 0;
+  //   right: 0;
+  //   top: 0;
+  //   z-index: 0;
+  // }
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   bottom: 0;
+  //   left: 0;
+  //   right: 0;
+  //   background-image: url("../images/content/bg.png");
+  //   width: 100%;
+  //   height: 100vh;
+  //   background-size: cover;
+  //   background-repeat: no-repeat;
+  //   background-position: bottom;
+  // }
 }
 .main__inner {
   position: relative;

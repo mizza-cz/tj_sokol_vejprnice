@@ -7,9 +7,10 @@
   color: var(--color-light);
   &__logo {
     display: block;
-    height: 25px;
+    height: 120px;
     @include media-breakpoint-down(lg) {
       order: -1;
+      margin: 0 auto;
     }
     img {
       width: 100%;
@@ -149,6 +150,9 @@
   transition: all 0.3s;
   @include media-breakpoint-down(lg) {
     order: -1;
+    position: absolute;
+    right: 40px;
+    top: 40px;
   }
   svg {
     height: 18px;
@@ -198,8 +202,10 @@
   padding-top: 40px;
   border-top: 1px solid rgba(#fff, 0.15);
   margin-bottom: 64px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  align-items: center;
   @include media-breakpoint-down(lg) {
     flex-wrap: wrap;
     margin-bottom: 24px;
@@ -209,7 +215,7 @@
   &__links {
     display: flex;
     margin-left: -16px;
-    margin-right: -16px;
+
     @include media-breakpoint-down(lg) {
       width: 100%;
       margin-top: 24px;

@@ -36,6 +36,8 @@
   &__inner {
     display: flex;
     position: relative;
+    align-items: center;
+    justify-content: space-evenly;
     @include media-breakpoint-down(lg) {
       flex-wrap: wrap;
     }
@@ -43,8 +45,9 @@
   &__content {
     max-width: 50%;
     flex: 0 0 50%;
-    padding-left: 130px;
-    padding-top: 120px;
+
+    padding-bottom: 120px;
+    padding-top: 80px;
     @include media-breakpoint-down(xl) {
       padding-left: 0;
       padding-top: 0;
@@ -76,8 +79,8 @@
     }
   }
   &__img {
-    max-width: 50%;
-    flex: 0 0 50%;
+    max-width: 30%;
+    flex: 0 0 30%;
     aspect-ratio: 715/735;
     margin-right: 22px;
     position: relative;

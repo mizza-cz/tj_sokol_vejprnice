@@ -1,0 +1,14 @@
+{% extends "@components/base/base.twig" %} {% set title = "11.0_players" %} {%
+block main %} {% include "@components/header/header.twig" %}
+
+<div class="main-bg">
+  <main class="main" aria-label="Hlavní obsah">
+    <div class="container">
+      {% include "@components/players-section/players-section.twig" %}
+    
+    </div>
+  </main>
+  {% include "@components/departments/departments_2.twig" %} {% include
+  "@components/posts-list/posts-list.twig" %}
+</div>
+{% endblock %}

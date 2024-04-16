@@ -1,13 +1,23 @@
 .players-section {
-  margin-bottom: 80px;
-
+  margin-bottom: 60px;
+  &__box {
+    margin-bottom: 24px;
+    padding: 32px 40px;
+    box-shadow: 0 0.75rem 2.125rem rgba(0, 0, 0, 0.06),
+      0 0.0625rem 0.4375rem rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+  }
   &__list {
-    margin-bottom: 40px;
     margin-top: 24px;
     li {
-      margin-bottom: 4px;
+      margin-bottom: 6px;
+      display: block;
       font-weight: 500;
-      font-size: 18px;
+      font-size: 20px;
+      @include media-breakpoint-down(md) {
+        font-size: 18px;
+        margin-bottom: 4px;
+      }
     }
   }
 }

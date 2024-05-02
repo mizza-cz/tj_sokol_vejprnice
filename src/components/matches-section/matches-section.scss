@@ -17,10 +17,16 @@
   display: flex;
   align-items: center;
   gap: 16px;
+  max-width: 40%;
+  flex: 0 0 40%;
   @include media-breakpoint-down(md) {
     flex-direction: column;
+    flex: 100%;
+    max-width: 100%;
   }
   &:first-child {
+    justify-content: flex-end;
+    text-align: right;
     @include media-breakpoint-down(md) {
       flex-direction: column-reverse;
     }
@@ -37,12 +43,18 @@
   }
 }
 .matches__info {
-  width: 100px;
+  width: 100%;
   text-align: center;
   font-size: 24px;
   line-height: normal;
   font-weight: 700;
   text-decoration-color: transparent;
+  flex: 0 0 20%;
+  max-width: 120px;
+  @include media-breakpoint-down(md) {
+    flex: auto;
+    max-width: 6.5rem;
+  }
   &:hover {
     text-decoration-color: inherit;
   }

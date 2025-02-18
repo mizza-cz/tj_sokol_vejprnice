@@ -13,5 +13,24 @@
 .text-center {
   text-align: center !important;
 }
-
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.teamPage {
+  .players-section__box {
+    margin-bottom: 64px;
+    padding: 0;
+    box-shadow: none;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 40px;
+    }
+  }
+  .newPlayers__title {
+    max-width: 132px;
+  }
+  .newPlayers {
+    gap: 24px;
+  }
+}
 /*! purgecss end ignore */

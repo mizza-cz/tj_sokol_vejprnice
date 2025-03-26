@@ -79,6 +79,13 @@
     border-left: none;
     border-right: none;
   }
+  .scoreboard__info {
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+  }
+  .scoreboard__result {
+    white-space: nowrap;
+  }
 }
 
 .departmentSectionBoard__col + .departmentSectionBoard__col {
